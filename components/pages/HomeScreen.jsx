@@ -1,11 +1,16 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native';
+import { useFonts } from 'expo-font';
 
 
 export default function HomeScreen() {
+    const [fontsLoaded] = useFonts({
+        font1: require("../../assets/fonts/Angel.ttf"),
+      });
+    
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Hola fncmicn,{"\n"}Bienvenido de nuevo. {"\n"}Manos a la</Text>
+      <Text style={styles.title}>Home.{"\n"}Template.</Text>
     </View>
   )
 }
@@ -18,6 +23,8 @@ const styles = StyleSheet.create({
     },
     title: {
         color:'#fff',
-        fontSize: 20,
+        fontSize: 50,
+        fontFamily:'font1',
+        textAlign: 'center',
     }
   });
