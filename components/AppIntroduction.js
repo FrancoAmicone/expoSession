@@ -1,13 +1,8 @@
-import { Image, StyleSheet } from 'react-native';
-import React, { useEffect, useState } from 'react';
-import { useFonts } from 'expo-font';
+import React from 'react';
+import { Image, StyleSheet, View, Text } from 'react-native';
 import Onboarding from 'react-native-onboarding-swiper';
 
 const AppIntroduction = ({ navigation }) => {
-  const [fontsLoaded] = useFonts({
-    'CustomFont': require('../assets/fonts/Angel.ttf'),
-  });
-
 
 
   return (
@@ -42,9 +37,8 @@ const AppIntroduction = ({ navigation }) => {
 
 const styles = StyleSheet.create({
   title: {
-    fontFamily:'font1',
-    fontSize: 35,
-
+    fontFamily: 'font1',
+    fontSize: 40,
   },
 });
 

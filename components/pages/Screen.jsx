@@ -4,7 +4,7 @@ import React from 'react'
 export default function Screen() {
     return (
         <View style={styles.container}>
-          <Text>Soy el screen secudanrio.</Text>
+          <Text style={styles.title}>Soy el screen secudanrio.</Text>
         </View>
       )
     }
@@ -16,4 +16,10 @@ const styles = StyleSheet.create({
           alignItems: 'center',
           justifyContent: 'center',
         },
+        title: {
+          fontFamily:'font1',
+          color:'#fff',
+          fontSize:40,
+
+        }
       });
